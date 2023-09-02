@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "latest-version": "^7.0.0",
+    "tsc": "^2.0.4",
+    "yarn": "^1.22.19"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2"
+  },
+  "name": "typescript_refactored_tic_tac_toe",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT"
+}
