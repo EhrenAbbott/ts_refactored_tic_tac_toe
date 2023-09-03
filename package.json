@@ -10,5 +10,7 @@
   "name": "typescript_refactored_tic_tac_toe",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": "https://github.com/EhrenAbbott/ts_refactored_tic_tac_toe.git",
+  "author": "Ehren Abbott <era12358@gmail.com>"
 }
