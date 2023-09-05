@@ -8,13 +8,13 @@ const players: Player[] = [
         id: 1, 
         name: "Player 1", 
         iconClass: "fa-x", 
-        colorClass: "turquoise",
+        colorClass: "dusty-rose",
     }, 
     { 
         id: 2, 
         name: "Player 2", 
         iconClass: "fa-o", 
-        colorClass: "yellow",
+        colorClass: "mint-green",
     },
 ]
 
@@ -52,7 +52,6 @@ function init() {
     })
 
     view.bindPlayerMoveEvent((square) => { 
-        // const clickedSquare = event.target
 
         const existingMove = store.game.moves.find(
             (move) => move.squareId === +square.id 

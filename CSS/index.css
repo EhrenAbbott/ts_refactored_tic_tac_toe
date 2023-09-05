@@ -1,11 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
 
-:root {
+/* :root {
   --dark-gray: #1a2a32;
-  --gray: #2e4756;
-  --turquoise: #3cc4bf;
-  --yellow: #f2b147;
-  --light-gray: #d3d3d3;
+  --gray: #2e4756; 
+  --turquoise: #3cc4bf; 
+  --yellow: #f2b147; 
+  --light-gray: #d3d3d3; 
+}  */
+
+:root { 
+  --burgundy: #822a3c; 
+  --gray-purple: #885563; 
+  --dusty-rose: #ecbfa6; 
+  --mint-green: #b2cba1; 
+  --light-gray: #cacdc5;
 }
 
 * {
@@ -20,7 +28,7 @@
 html,
 body {
   height: 100%;
-  background-color: var(--dark-gray);
+  background-color: var(--burgundy);
 }
 
 body {
@@ -42,12 +50,12 @@ button:hover {
   display: none !important;
 }
 
-.yellow {
-  color: var(--yellow);
+.mint-green {
+  color: var(--mint-green);
 }
 
-.turquoise {
-  color: var(--turquoise);
+.dusty-rose {
+  color: var(--dusty-rose);
 }
 
 .shadow {
@@ -131,9 +139,10 @@ button:hover {
   justify-content: space-around;
   align-items: center;
   border-radius: 10px;
-  color: white;
+  color: black;
   background-color: rgba(211, 211, 211, 0.05);
   border: 1px solid transparent;
+  font-weight: 700;
 }
 
 .menu-btn:focus,
@@ -146,7 +155,7 @@ button:hover {
   z-index: 10;
   top: 60px;
   right: 0;
-  background-color: #203139;
+  background-color: var(--burgundy);
   border-radius: 2px;
   padding: 10px;
 }
@@ -154,7 +163,8 @@ button:hover {
 .items button {
   background-color: transparent;
   padding: 8px;
-  color: white;
+  color: black;
+  font-weight: 700;
 }
 
 .items button:hover {
@@ -163,7 +173,7 @@ button:hover {
 }
 
 .square {
-  background-color: var(--gray);
+  background-color: var(--gray-purple);
   border-radius: 10px;
   display: flex;
   justify-content: center;
@@ -201,7 +211,7 @@ button:hover {
 /* Footer styles */
 
 footer {
-  color: white;
+  color: black;
   margin-top: 50px;
 }
 
@@ -211,7 +221,7 @@ footer p {
 }
 
 footer a {
-  color: var(--yellow);
+  color: var(--mint-green);
 }
 
 /* Modal styles - opens when game finishes  */
@@ -223,7 +233,7 @@ footer a {
   position: fixed;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
+  /* background-color: rgba(0, 0, 0, 0.6); */
 }
 
 .modal-contents {
@@ -231,20 +241,32 @@ footer a {
   height: 150px;
   width: 100%;
   max-width: 300px;
-  background-color: #2a4544;
+  background-color: var(--dusty-rose);
   border-radius: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 20px;
-  color: white;
+  color: black;
+  font-weight: 700;
   margin: 10px;
+  border: 2px solid black;
 }
 
 .modal-contents button {
   padding: 10px;
-  background-color: var(--turquoise);
-  color: #2a4544;
-  border-radius: 3px;
+  background-color: var(--gray-purple);
+  color: black;
+  font-weight: 500;
+  border-radius: 3px; 
+  border: 1px solid var(--light-gray)
 }
+
+/* .colors { 
+  #cacdc5 (lightgrey) 
+  #b2cba1 (mint green)
+  #d6b3a0 (dusty rose)
+  #885563 (grey purple)
+  #822a3c (burgundy)
+} */
